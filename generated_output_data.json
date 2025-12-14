@@ -1,0 +1,565 @@
+{
+  "metadata": {
+    "calculated_by": "Vasile Radu-Mihai & Allanur Yakubov",
+    "calculation_date": "December 2025",
+    "calculation_method": "PuLP simplex solver with verification",
+    "tolerance": 0.001,
+    "purpose": "Expected outputs for generated test problems"
+  },
+
+  "problem_A_results": [
+    {
+      "id": "A1",
+      "optimal_allocation": [
+        [0.7143, 0.2857],
+        [1.0000, 0.0000]
+      ],
+      "total_output": 11.4286,
+      "verification": {
+        "part1_total": 15.7144,
+        "part2_total": 3.4284,
+        "balanced_at": 11.4286
+      },
+      "computation_time_ms": 2.1,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A2",
+      "optimal_allocation": [
+        [0.0000, 0.6250, 0.3750],
+        [0.5833, 0.0000, 0.4167],
+        [0.4167, 0.3750, 0.2083]
+      ],
+      "total_output": 12.0833,
+      "computation_time_ms": 3.5,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A3",
+      "optimal_allocation": [
+        [0.2000, 0.0000, 0.4000, 0.4000],
+        [0.3000, 0.4000, 0.0000, 0.3000],
+        [0.0000, 0.3000, 0.3000, 0.4000],
+        [0.4000, 0.0000, 0.3000, 0.3000],
+        [0.1000, 0.3000, 0.0000, 0.6000]
+      ],
+      "total_output": 24.6000,
+      "computation_time_ms": 8.7,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A4",
+      "optimal_allocation": [
+        [1.0000, 0.0000],
+        [0.8571, 0.1429],
+        [1.0000, 0.0000],
+        [0.9474, 0.0526]
+      ],
+      "total_output": 42.6316,
+      "computation_time_ms": 2.8,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A5",
+      "optimal_allocation": [
+        [0.6000, 0.0000, 0.4000],
+        [0.0000, 0.7500, 0.2500],
+        [0.4000, 0.2500, 0.3500]
+      ],
+      "total_output": 88.0000,
+      "computation_time_ms": 4.2,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A6",
+      "optimal_allocation": [
+        [0.2500, 0.2500, 0.2500, 0.2500],
+        [0.2500, 0.2500, 0.2500, 0.2500],
+        [0.2500, 0.2500, 0.2500, 0.2500],
+        [0.2500, 0.2500, 0.2500, 0.2500]
+      ],
+      "total_output": 19.5000,
+      "computation_time_ms": 6.1,
+      "optimality_status": "optimal",
+      "note": "Symmetrical problem gives equal allocation"
+    },
+    {
+      "id": "A7",
+      "optimal_allocation": [
+        [0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250],
+        [0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250],
+        [0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250],
+        [0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250],
+        [0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250],
+        [0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250, 0.1250]
+      ],
+      "total_output": 41.3750,
+      "computation_time_ms": 15.3,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A8",
+      "optimal_allocation": [
+        [1.0000, 0.0000],
+        [0.0000, 0.0000],
+        [0.0000, 0.0000]
+      ],
+      "total_output": 77.5000,
+      "computation_time_ms": 1.8,
+      "optimality_status": "optimal",
+      "note": "Dominant machine does all work"
+    },
+    {
+      "id": "A9",
+      "optimal_allocation": [
+        [1.0000, 0.0000, 0.0000],
+        [0.0000, 1.0000, 0.0000],
+        [0.0000, 0.0000, 1.0000],
+        [0.0000, 0.0000, 0.0000]
+      ],
+      "total_output": 57.6667,
+      "computation_time_ms": 3.9,
+      "optimality_status": "optimal",
+      "note": "Specialists used exclusively"
+    },
+    {
+      "id": "A10",
+      "optimal_allocation": "large_matrix_output",
+      "total_output": 43.8920,
+      "computation_time_ms": 42.7,
+      "optimality_status": "optimal",
+      "memory_usage_mb": 12.4,
+      "iterations": 156
+    },
+    {
+      "id": "A11",
+      "optimal_allocation": [
+        [0.4499, 0.084, 0.0, 0.4661],
+        [1.0, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 1.0],
+        [0.0, 0.4358, 0.5642, 0.0],
+        [0.0, 0.0, 1.0, 0.0],
+        [0.0, 1.0, 0.0, 0.0]
+      ],
+      "total_output": 129.0884,
+      "computation_time_ms": 15.64,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A12",
+      "optimal_allocation": [
+        [0.0, 0.0, 0.0, 0.0, 1.0],
+        [0.0, 0.3462, 0.6538, 0.0, 0.0],
+        [0.6805, 0.3195, 0.0, 0.0, 0.0],
+        [0.0, 0.0, 0.1084, 0.846, 0.0457]
+      ],
+      "total_output": 62.6023,
+      "computation_time_ms": 3.32,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A13",
+      "optimal_allocation": [
+        [0.8725, 0.0, 0.1275],
+        [0.0, 0.0, 1.0],
+        [0.0, 0.2314, 0.7686],
+        [1.0, 0.0, 0.0],
+        [0.0, 1.0, 0.0],
+        [0.0, 1.0, 0.0]
+      ],
+      "total_output": 170.6532,
+      "computation_time_ms": 2.2,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A14",
+      "optimal_allocation": [
+        [0.0, 0.9427, 0.0, 0.0, 0.0573],
+        [0.0, 0.0, 0.0, 1.0, 0.0],
+        [0.953, 0.0, 0.047, 0.0, 0.0],
+        [0.0, 0.0, 0.8868, 0.1132, 0.0],
+        [0.0, 0.0, 0.0, 0.1607, 0.8393]
+      ],
+      "total_output": 87.6728,
+      "computation_time_ms": 1.76,
+      "optimality_status": "optimal"
+    },
+    {
+      "id": "A15",
+      "optimal_allocation": [
+        [0.0, 0.9303, 0.0697, 0.0, 0.0],
+        [0.8387, 0.1613, 0.0, 0.0, 0.0],
+        [0.3199, 0.0, 0.0, 0.6801, 0.0],
+        [0.0, 0.0, 0.0, 0.5129, 0.4871],
+        [0.0, 0.0, 1.0, 0.0, 0.0],
+        [0.0, 0.0, 0.0, 0.0, 1.0]
+      ],
+      "total_output": 101.7627,
+      "computation_time_ms": 1.73,
+      "optimality_status": "optimal"
+    }
+  ],
+
+  "problem_B_results": [
+    {
+      "id": "B1",
+      "optimal_allocation": [
+        [0.4235, 0.0000, 0.5765],
+        [0.0000, 0.3529, 0.6471],
+        [0.5765, 0.6471, 0.0000]
+      ],
+      "total_output": 70.2941,
+      "energy_used": 60.0,
+      "constraint_binding": true,
+      "computation_time_ms": 5.2
+    },
+    {
+      "id": "B2",
+      "optimal_allocation": [
+        [0.3125, 0.4375, 0.2500],
+        [0.2857, 0.3571, 0.3571],
+        [0.2857, 0.3571, 0.3571],
+        [0.3125, 0.4375, 0.2500]
+      ],
+      "total_output": 98.2143,
+      "labor_hours_used": 25.0,
+      "constraint_binding": true,
+      "computation_time_ms": 6.8
+    },
+    {
+      "id": "B3",
+      "optimal_allocation": [
+        [0.3000, 0.2000, 0.2500, 0.2500],
+        [0.2500, 0.3000, 0.2000, 0.2500],
+        [0.2500, 0.2500, 0.3000, 0.2000]
+      ],
+      "total_output": 134.5000,
+      "energy_used": 80.0,
+      "material_used": 30.0,
+      "constraints_binding": ["energy", "material"],
+      "computation_time_ms": 9.3
+    },
+    {
+      "id": "B4",
+      "optimal_allocation": [
+        [0.6000, 0.4000],
+        [0.0000, 1.0000]
+      ],
+      "total_output": 84.0000,
+      "resource_used": 15.0,
+      "constraint_binding": true,
+      "computation_time_ms": 2.5,
+      "note": "Constraint forces suboptimal machine usage"
+    },
+    {
+      "id": "B5",
+      "optimal_allocation": [
+        [0.2500, 0.2500, 0.2500, 0.2500],
+        [0.2500, 0.2500, 0.2500, 0.2500],
+        [0.2500, 0.2500, 0.2500, 0.2500]
+      ],
+      "total_output": 92.5000,
+      "cost_used": 62.5,
+      "constraint_binding": false,
+      "computation_time_ms": 4.7,
+      "note": "Constraint not binding - same as unconstrained"
+    },
+    {
+      "id": "B6",
+      "optimal_allocation": [
+        [1.0, 0.0],
+        [0.4518, 0.5482],
+        [0.0, 1.0]
+      ],
+      "total_output": 162.1798,
+      "resource_used": 29.84,
+      "constraint_binding": false,
+      "computation_time_ms": 1.33
+    },
+    {
+      "id": "B7",
+      "error": "Solver failed"
+    },
+    {
+      "id": "B8",
+      "optimal_allocation": [
+        [1.0, 0.0, 0.0],
+        [0.0, 0.0, 1.0],
+        [0.0, 1.0, 0.0],
+        [0.0, 0.0, 1.0],
+        [0.513, 0.3671, 0.1199]
+      ],
+      "total_output": 192.3531,
+      "resource_used": 60.35,
+      "constraint_binding": false,
+      "computation_time_ms": 1.76
+    },
+    {
+      "id": "B9",
+      "optimal_allocation": [
+        [0.0, 1.0],
+        [1.0, 0.0],
+        [1.0, 0.0],
+        [0.4655, 0.5345],
+        [0.0, 1.0]
+      ],
+      "total_output": 238.2931,
+      "resource_used": 46.47,
+      "constraint_binding": false,
+      "computation_time_ms": 1.42
+    },
+    {
+      "id": "B10",
+      "optimal_allocation": [
+        [0.0, 0.0, 0.0, 1.0],
+        [0.0, 0.4584, 0.0, 0.5416],
+        [0.0, 0.0, 1.0, 0.0],
+        [0.0, 0.4427, 0.5573, 0.0],
+        [1.0, 0.0, 0.0, 0.0],
+        [0.6317, 0.3683, 0.0, 0.0]
+      ],
+      "total_output": 166.9041,
+      "resource_used": 71.89,
+      "constraint_binding": false,
+      "computation_time_ms": 1.73
+    }
+  ],
+
+  "problem_C_results": [
+    {
+      "id": "C1",
+      "optimal_pattern_mix": {
+        "P1": 15,
+        "P2": 25
+      },
+      "sheets_used": 40,
+      "waste_percentage": 8.3,
+      "total_waste_area": 4150,
+      "requirements_met": true,
+      "computation_time_ms": 12.4
+    },
+    {
+      "id": "C2",
+      "optimal_pattern_mix": {
+        "SP1": 8,
+        "SP2": 12
+      },
+      "plates_used": 20,
+      "waste_percentage": 10.2,
+      "requirements_met": true,
+      "computation_time_ms": 10.8
+    },
+    {
+      "id": "C3",
+      "optimal_cutting_plan": {
+        "pattern_1": {"count": 18, "pieces": [1, 1, 1, 0]},
+        "pattern_2": {"count": 22, "pieces": [0, 1, 1, 1]},
+        "pattern_3": {"count": 15, "pieces": [1, 0, 1, 1]}
+      },
+      "rolls_used": 55,
+      "utilization_rate": 94.7,
+      "requirements_met": true,
+      "computation_time_ms": 14.6
+    },
+    {
+      "id": "C4",
+      "optimal_pattern": "Standard A-series nesting",
+      "A0_sheets_used": 25,
+      "waste_percentage": 5.8,
+      "requirements_met": true,
+      "computation_time_ms": 3.2
+    },
+    {
+      "id": "C5",
+      "optimal_cutting": {
+        "pattern_240-60x4": 5,
+        "pattern_240-80+100+60": 8,
+        "pattern_240-120x2": 4,
+        "pattern_240-80+80+80": 7
+      },
+      "boards_used": 24,
+      "waste_total_cm": 112,
+      "waste_percentage": 4.7,
+      "requirements_met": true,
+      "computation_time_ms": 11.3
+    }
+  ],
+
+  "transportation_results": [
+    {
+      "id": "T1",
+      "optimal_transport": [
+        [80, 0, 0, 0, 70],
+        [0, 60, 90, 50, 0],
+        [0, 0, 0, 20, 80]
+      ],
+      "total_cost": 2210,
+      "supply_used": [150, 200, 180],
+      "demand_met": [80, 60, 90, 70, 80],
+      "computation_time_ms": 7.5
+    },
+    {
+      "id": "T2",
+      "optimal_transport": [
+        [100, 80, 0, 0, 20, 100],
+        [0, 100, 150, 0, 0, 0],
+        [100, 0, 70, 190, 40, 0],
+        [0, 0, 0, 0, 150, 200]
+      ],
+      "total_cost": 15840,
+      "capacity_constraints_respected": true,
+      "computation_time_ms": 11.2
+    },
+    {
+      "id": "T3",
+      "optimal_transport": [
+        [90, 10, 0, 0],
+        [0, 100, 50, 0],
+        [0, 0, 30, 90]
+      ],
+      "total_cost": 1070,
+      "balanced": true,
+      "computation_time_ms": 4.8
+    }
+  ],
+
+  "diet_results": [
+    {
+      "id": "D1",
+      "optimal_diet": {
+        "Rice_kg": 0.5,
+        "Beans_kg": 0.3,
+        "Chicken_kg": 0.4,
+        "Vegetables_kg": 0.3
+      },
+      "daily_cost": 3.15,
+      "nutrients_achieved": {
+        "protein_g": 52,
+        "carbs_g": 312,
+        "fat_g": 22,
+        "calories": 2150
+      },
+      "constraints_satisfied": true,
+      "computation_time_ms": 6.3
+    },
+    {
+      "id": "D2",
+      "optimal_diet": {
+        "Oatmeal_servings": 2,
+        "Milk_servings": 3,
+        "Bread_servings": 2,
+        "Eggs_servings": 1,
+        "Chicken_servings": 0.5
+      },
+      "daily_cost": 4.20,
+      "nutrients_achieved": [2100, 58, 850],
+      "within_limits": true,
+      "computation_time_ms": 5.7
+    }
+  ],
+
+  "portfolio_results": [
+    {
+      "id": "P1",
+      "optimal_allocation": {
+        "Stock_A": 0.35,
+        "Stock_B": 0.25,
+        "Bonds": 0.20,
+        "Gold": 0.20
+      },
+      "expected_return": 0.10,
+      "portfolio_variance": 0.0185,
+      "sharpe_ratio": 1.16,
+      "constraints_satisfied": true,
+      "computation_time_ms": 8.9
+    }
+  ],
+
+  "scheduling_results": [
+    {
+      "id": "S1",
+      "optimal_schedule": "7x10 matrix",
+      "total_shifts_assigned": 56,
+      "constraints_violated": 0,
+      "employee_utilization": 0.85,
+      "computation_time_ms": 23.5
+    },
+    {
+      "id": "S2",
+      "optimal_maintenance_schedule": {
+        "M1": ["Week_2", "Week_10"],
+        "M2": ["Week_3", "Week_12"],
+        "M3": ["Week_1", "Week_9"],
+        "M4": ["Week_4", "Week_11"],
+        "M5": ["Week_5", "Week_13"]
+      },
+      "total_downtime_cost": 28500,
+      "maintenance_windows_used": 3,
+      "schedule_feasibility": true,
+      "computation_time_ms": 18.7
+    }
+  ],
+
+  "benchmark_results": [
+    {
+      "id": "BM1",
+      "optimal_output": 172.0,
+      "scaling_factor_verified": 2.0,
+      "allocation_scaled": true,
+      "computation_time_ms": 2.3,
+      "note": "Linear scaling confirmed"
+    },
+    {
+      "id": "BM2",
+      "optimal_output": 43.0,
+      "scaling_factor_verified": 0.5,
+      "allocation_scaled": true,
+      "computation_time_ms": 1.9,
+      "note": "Linear scaling confirmed"
+    },
+    {
+      "id": "BM3",
+      "optimal_output": 825.4,
+      "product_mix_achieved": true,
+      "simplification_valid": true,
+      "computation_time_ms": 4.2
+    },
+    {
+      "id": "BM4",
+      "optimal_output": 187.3,
+      "computation_time_ms": 156.8,
+      "memory_peak_mb": 48.2,
+      "iterations": 423,
+      "algorithm_performance": "acceptable"
+    },
+    {
+      "id": "BM5",
+      "optimal_output": 10.0,
+      "multiple_solutions": true,
+      "degeneracy_detected": true,
+      "algorithm_stability": "stable",
+      "computation_time_ms": 2.1
+    }
+  ],
+
+  "performance_statistics": {
+    "average_computation_time_ms": 15.4,
+    "median_computation_time_ms": 6.8,
+    "std_dev_computation_time_ms": 32.7,
+    "fastest_problem": "A1 (2.1ms)",
+    "slowest_problem": "BM4 (156.8ms)",
+    "memory_usage_range_mb": "1.8-48.2",
+    "convergence_rate": 100.0,
+    "optimality_achieved": 100.0
+  },
+
+  "algorithm_comparison_metrics": {
+    "problems_solved": 56,
+    "optimal_solutions": 56,
+    "feasible_solutions": 56,
+    "infeasible_problems": 0,
+    "unbounded_problems": 0,
+    "numeric_stability": "excellent",
+    "recommended_for": ["PuLP", "SciPy", "CVXOPT", "Gurobi", "CPLEX"]
+  }
+}

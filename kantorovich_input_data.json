@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "source": "Kantorovich, L. V. (1939). Mathematical Methods of Organizing and Planning Production",
+    "extraction_date": "December 2025",
+    "purpose": "Algorithm testing for Archaeology of Intelligent Machines project",
+    "authors": ["Vasile Radu-Mihai", "Allanur Yakubov"],
+    "course": "Archaeology of Intelligent Machines, University of Bucharest"
+  },
+
+  "problem_A": {
+    "name": "Machine Allocation Problem (Problem A)",
+    "description": "Optimal distribution of parts processing among machines for maximum complete sets output",
+    "section": "Section I",
+    "page": 6,
+    "machines": [
+      {"name": "Milling machines", "count": 3},
+      {"name": "Turret lathes", "count": 3},
+      {"name": "Automatic turret lathe", "count": 1}
+    ],
+    "parts": ["First part", "Second part"],
+    "productivity_matrix": [
+      [10, 20],
+      [20, 30],
+      [30, 80]
+    ],
+    "constraints": {
+      "non_negativity": "h[i,k] ≥ 0",
+      "time_allocation": "∑h[i,k] = 1 for each machine i",
+      "completeness": "z₁ = z₂ = ... = z_m = z"
+    },
+    "variables": {
+      "n_machines_total": 7,
+      "n_parts": 2,
+      "n_variables": 14
+    }
+  },
+
+  "problem_B": {
+    "name": "Problem with Additional Constraints (Problem B)",
+    "description": "Machine allocation with energy/resource consumption constraints",
+    "section": "Appendix 1",
+    "page": "39-41",
+    "machines": ["Excavator A", "Excavator B", "Excavator C"],
+    "work_types": ["Work I", "Work II", "Work III"],
+    "productivity_matrix": [
+      [105, 56, 56],
+      [107, 66, 83],
+      [64, 38, 53]
+    ],
+    "energy_consumption": [
+      [12, 12, 12],
+      [21, 20, 17],
+      [15, 11, 14]
+    ],
+    "max_energy_consumption": 43,
+    "work_volume_required": 20000
+  },
+
+  "problem_C_example5": {
+    "name": "Cutting Stock Problem - Example 5",
+    "description": "Minimization of scrap when cutting form boards",
+    "section": "Section IV",
+    "page": "15-16",
+    "board_length": 7.4,
+    "required_parts": [
+      {"name": "2.9m board", "length": 2.9, "required_per_set": 1},
+      {"name": "2.1m board", "length": 2.1, "required_per_set": 1},
+      {"name": "1.5m board", "length": 1.5, "required_per_set": 1}
+    ],
+    "sets_required": 100,
+    "cutting_patterns": [
+      {
+        "name": "Pattern I",
+        "cuts": [2.9, 1.5, 1.5, 1.5],
+        "total_length": 7.4,
+        "waste": 0.0
+      },
+      {
+        "name": "Pattern II",
+        "cuts": [2.9, 2.9, 1.5],
+        "total_length": 7.3,
+        "waste": 0.1
+      },
+      {
+        "name": "Pattern III",
+        "cuts": [2.1, 2.1, 1.5, 1.5],
+        "total_length": 7.2,
+        "waste": 0.2
+      },
+      {
+        "name": "Pattern IV",
+        "cuts": [2.9, 2.1, 2.1],
+        "total_length": 7.1,
+        "waste": 0.3
+      },
+      {
+        "name": "Pattern V",
+        "cuts": [1.5, 1.5, 1.5, 2.1],
+        "total_length": 6.6,
+        "waste": 0.8
+      },
+      {
+        "name": "Pattern VI",
+        "cuts": [2.9, 2.1, 1.5],
+        "total_length": 6.5,
+        "waste": 0.9
+      }
+    ]
+  },
+
+  "problem_C_example6": {
+    "name": "Cutting Stock Problem - Example 6",
+    "description": "Mixed board lengths cutting problem",
+    "section": "Section IV",
+    "page": 16,
+    "board_types": [
+      {"length": 7.4, "quantity": 100},
+      {"length": 6.4, "quantity": 50}
+    ],
+    "required_parts": [
+      {"length": 2.9, "required_per_set": 1},
+      {"length": 2.1, "required_per_set": 1},
+      {"length": 1.5, "required_per_set": 1}
+    ],
+    "cutting_patterns_7_4m": [
+      {"name": "I", "cuts": [2.9, 1.5, 1.5, 1.5], "waste": 0.0},
+      {"name": "II", "cuts": [2.9, 2.9, 1.5], "waste": 0.1},
+      {"name": "IV", "cuts": [2.9, 2.1, 2.1], "waste": 0.3},
+      {"name": "VI", "cuts": [2.9, 2.1, 1.5], "waste": 0.9}
+    ],
+    "cutting_patterns_6_4m": [
+      {"name": "I", "cuts": [2.1, 2.1, 2.1], "waste": 0.1},
+      {"name": "II", "cuts": [1.5, 1.5, 1.5, 1.5], "waste": 0.4},
+      {"name": "III", "cuts": [1.5, 1.5, 2.9], "waste": 0.5},
+      {"name": "IV", "cuts": [2.9, 2.9], "waste": 0.6}
+    ]
+  },
+
+  "plywood_trust_problem": {
+    "name": "Plywood Trust Problem",
+    "description": "Optimal distribution of peeling machines for given product mix",
+    "section": "Section II & Appendix 2",
+    "page": "10-11, 45-54",
+    "machines": 8,
+    "material_types": 5,
+    "productivity_matrix": [
+      [4.0, 7.0, 8.5, 13.0, 16.5],
+      [4.5, 7.8, 9.7, 13.7, 17.5],
+      [5.0, 8.0, 10.0, 14.8, 18.0],
+      [4.0, 7.0, 9.0, 13.5, 17.0],
+      [3.5, 6.5, 8.5, 12.7, 16.0],
+      [3.0, 6.0, 8.0, 13.5, 15.0],
+      [4.0, 7.0, 9.0, 14.0, 17.0],
+      [5.0, 8.0, 10.0, 14.8, 18.0]
+    ],
+    "product_mix": [0.10, 0.12, 0.28, 0.36, 0.14],
+    "product_mix_percentages": {
+      "material_1": 10,
+      "material_2": 12,
+      "material_3": 28,
+      "material_4": 36,
+      "material_5": 14
+    }
+  },
+
+  "carpentry_problem": {
+    "name": "Carpentry Work Distribution",
+    "description": "Optimal distribution of carpentry work among different saws",
+    "section": "Section III",
+    "page": 13,
+    "work_types": [
+      {"name": "Work I", "description": "Cross-cutting boards 4.5m, 2×14", "required_cuts": 10000},
+      {"name": "Work II", "description": "Cross-cutting boards 6.5m, 4×30", "required_cuts": 5000},
+      {"name": "Work III", "description": "Ripping boards 2m, 4×15", "required_meters": 4000}
+    ],
+    "machines": [
+      {"name": "Pendulum saws", "count": 2},
+      {"name": "Circular saw with hand control", "count": 1},
+      {"name": "Electric disc saws", "count": 10},
+      {"name": "Frame saws", "count": 20}
+    ],
+    "productivity_matrix": [
+      [400, 213, 0],
+      [0, 0, 475],
+      [167, 125, 52],
+      [59, 38, 23]
+    ]
+  },
+
+  "additional_test_cases": [
+    {
+      "name": "Test Case 1: Small Factory",
+      "description": "2 machines, 3 products - simple linear programming test",
+      "productivity": [[8, 12, 6], [10, 8, 12]],
+      "demand": [100, 150, 200],
+      "machine_capacity": [40, 50]
+    },
+    {
+      "name": "Test Case 2: Transportation Problem",
+      "description": "3 factories to 4 warehouses",
+      "supply": [100, 150, 200],
+      "demand": [80, 90, 120, 160],
+      "transport_costs": [
+        [4, 6, 8, 9],
+        [5, 4, 7, 8],
+        [6, 5, 4, 7]
+      ]
+    },
+    {
+      "name": "Test Case 3: Diet Problem",
+      "description": "Simplified Stigler's diet problem",
+      "foods": ["Oats", "Milk", "Bread", "Meat"],
+      "nutrients": ["Calories", "Protein", "Calcium"],
+      "min_requirements": [2000, 55, 800],
+      "food_data": [
+        {"name": "Oats", "cost": 0.5, "nutrients": [110, 4, 2]},
+        {"name": "Milk", "cost": 0.8, "nutrients": [150, 8, 285]},
+        {"name": "Bread", "cost": 0.3, "nutrients": [90, 3, 15]},
+        {"name": "Meat", "cost": 2.0, "nutrients": [250, 25, 10]}
+      ]
+    }
+  ],
+
+  "algorithm_testing_parameters": {
+    "tolerance_levels": {
+      "strict": 0.001,
+      "medium": 0.01,
+      "relaxed": 0.05
+    },
+    "allowed_runtime_seconds": {
+      "small_problems": 1,
+      "medium_problems": 5,
+      "large_problems": 30
+    },
+    "validation_methods": ["exact_match", "relative_error", "absolute_error"]
+  }
+}
